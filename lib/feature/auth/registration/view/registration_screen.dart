@@ -11,7 +11,6 @@ import 'package:task_360/feature/auth/registration/components/custom_methods.dar
 import 'package:task_360/core/global_widegts/custom_submit_button.dart';
 import 'package:task_360/core/global_widegts/custom_text.dart';
 import 'package:task_360/core/global_widegts/custom_textfield.dart';
-import 'package:task_360/feature/auth/registration/components/or_signup_with.dart';
 import 'package:task_360/feature/auth/registration/controller/registration_controller.dart';
 
 class RegistrationScreen extends StatelessWidget {
@@ -203,7 +202,7 @@ class RegistrationScreen extends StatelessWidget {
                         SizedBox(height: 24),
                         CustomSubmitButton(text: "Sign Up", onTap: () {}),
                         SizedBox(height: 24),
-                        OrSignUnWith(text: "Or Sign up with"),
+
                         SizedBox(height: 24),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,

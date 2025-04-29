@@ -39,7 +39,7 @@ class IconsPath {
   static const String download = "assets/icons/download.png";
 
   //category
-  static const String ac = "assets/icons/ac.png";
+  static const String ac = "assets/icons/eye.png";
   static const String burglar = "assets/icons/burglar.png";
   static const String carpenters = "assets/icons/carpenters.png";
   static const String cleaners = "assets/icons/cleaners.png";
@@ -53,4 +53,6 @@ class IconsPath {
 
   static const String badge = "assets/icons/verify.png";
   static const String notification1 = "assets/icons/notification.png";
+
+  static const String eye = "assets/icons/eye.png";
 }

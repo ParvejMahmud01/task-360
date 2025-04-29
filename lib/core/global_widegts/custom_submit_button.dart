@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:task_360/core/const/app_colors.dart';
+import 'package:task_360/core/const/app_sizes.dart';
 
 class CustomSubmitButton extends StatelessWidget {
   final String text;
@@ -34,32 +35,22 @@ class CustomSubmitButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: Colors.transparent,
-      borderRadius: BorderRadius.circular(radius ?? 8),
+      borderRadius: BorderRadius.circular(radius ?? 20),
       child: Ink(
         decoration: BoxDecoration(
-          color: bgColor ?? AppColors.buttonColor,
-          borderRadius: BorderRadius.circular(radius ?? 100),
-          border: Border.all(color: border ?? AppColors.buttonColor),
+          color: bgColor ?? AppColors.primaryColor,
+          borderRadius: BorderRadius.circular(radius ?? 20),
+          border: Border.all(color: border ?? AppColors.primaryColor),
         ),
         child: InkWell(
-          borderRadius: BorderRadius.circular(radius ?? 100),
+          borderRadius: BorderRadius.circular(radius ?? 20),
           splashColor: Colors.white.withValues(alpha: .3),
           onTap: onTap,
           child: Container(
-            height: height ?? 52,
+            height: height ?? getWidth(42, maxWidth: 45),
             width: double.infinity,
             alignment: Alignment.center,
-            decoration: BoxDecoration(
-              boxShadow: [
-                boxShadow ??
-                    BoxShadow(
-                      offset: Offset(0, 8),
-                      blurRadius: 19,
-                      spreadRadius: 0,
-                      color: Color(0xff00713D).withValues(alpha: 0.16),
-                    ),
-              ],
-            ),
+            decoration: BoxDecoration(),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -67,8 +58,8 @@ class CustomSubmitButton extends StatelessWidget {
                 Text(
                   text,
                   style: GoogleFonts.inter(
-                    fontSize: fontSize ?? 16,
-                    fontWeight: fontWeight ?? FontWeight.w600,
+                    fontSize: fontSize ?? getWidth(16, maxWidth: 18),
+                    fontWeight: fontWeight ?? FontWeight.w700,
                     color: textColor ?? AppColors.white,
                   ),
                 ),

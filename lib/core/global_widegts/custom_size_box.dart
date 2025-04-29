@@ -5,5 +5,5 @@ SizedBox bottomSizeBox() {
 }
 
 SizedBox topSizeBox() {
-  return SizedBox(height: 60);
+  return SizedBox(height: 43);
 }
